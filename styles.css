@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo a {
+  text-decoration: none;
+  color: linear-gradient(to right, #ff0000, #ffff00);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 18px;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #555;
+}
+
+nav a.current {
+  color: purple;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
+  margin-bottom: 50px;
+  width: 100%;
+  padding: 20px;
+}
+
+section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section:hover {
+  transform: scale(1.1);
+}
+
+#home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section:not(#home) {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+section[data-color] {
+  background-color: inherit;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  text-align: center;
+}
